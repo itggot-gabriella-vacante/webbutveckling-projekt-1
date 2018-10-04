@@ -1,0 +1,71 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* text */
+h1{
+    margin: 0;
+}
+
+/* wrapper */
+.wrapper{
+    height: auto;
+    width: 100%;
+    background-image: url(../../site/img/Water-1600x900.jpg);
+    background-repeat: no-repeat;
+    background-position: sticky;
+    background-attachment: fixed;
+}
+
+/* header */
+header{
+    /* background-color: orange; */
+    height: 15vh;
+    padding: 1,4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* main */
+.main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 65vh;
+    width: 100%;
+}
+
+.btn{
+    background-color: orange;
+}
+
+.img{
+    background-image: url(../../site/img/about_carp_313336.png);
+    grid-row: span 2;
+    width: 300px;
+    height: 300px;
+}
+
+/* gallery */
+.gallery{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/* footer */
+footer{
+    /* background-color: orange; */
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
