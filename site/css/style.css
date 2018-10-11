@@ -72,16 +72,18 @@ header{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
-.img{
-    border-width: 10px;
-    height: 100px;
-    width: 100px;
-    border-color: white;
-    
 
+
+img{
+    border-width: 5px;
+    height: 300px;
+    background: transparent no-repeat center;
+    border-color: white;
+    margin: 10px;
+    background-size: contain;
 }
 
 /*about_us*/
@@ -98,6 +100,8 @@ header{
     grid-template-columns: 200px auto;
     grid-template-rows: 50px auto;
     min-height: 200px;
+    grid-gap: 20px;
+    padding: 20px;
     height: auto;
     width: 30rem;
     background-color: orange;
@@ -106,15 +110,16 @@ header{
 
 #profile_img_gabriella{
     grid-row: span 2;
-    background-image: url(../../site/img/about_carp_313336.png) 
-
-
+    background-image: url(../../site/img/about_carp_313336.png); 
+    width: 200px;
+    height: 200px;
 }
 
 #profile_img_martin{
     grid-row: span 2;
-    background-image: url(../../site/img/about_carp_313336.png) 
-
+    background-image: url(../../site/img/about_carp_313336.png);
+    width: 200px;
+    height: 200px;
 }
 
 /* footer */
