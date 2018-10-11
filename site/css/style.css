@@ -9,13 +9,14 @@ body{
 /* text */
 h1{
     margin: 0;
+    justify-self: center;
 }
 
 /* wrapper */
 .wrapper{
     height: auto;
     width: 100%;
-    background-image: url(../../site/img/Water-1600x900.jpg);
+    background-image: url(../img/Water-1600x900-edited40.jpg);
     background-repeat: no-repeat;
     background-position: sticky;
     background-attachment: fixed;
@@ -24,31 +25,44 @@ h1{
 /* header */
 header{
     /* background-color: orange; */
-    height: 15vh;
-    padding: 1,4rem;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between;  */
+    height: auto;
+    width: 100%;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2rem;
+}
+
+.home_button{
+    text-decoration: none;
+    color: white;
+    grid-column: span 3;
+    justify-self: center;
+    font-size: 2.5rem;
 }
 
 /* main */
 .main{
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
     height: 65vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
     background-color: orange;
+    width: 100%;
+    min-height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.img{
+#main_img{
     background-image: url(../../site/img/about_carp_313336.png);
-    grid-row: span 2;
+    grid-row: all;
     width: 300px;
     height: 300px;
 }
@@ -73,8 +87,8 @@ header{
 .profile{
     display: grid;
     grid-template-columns: 20px 25px;
-    height: 100px;
-    width: 500px;
+    height: auto;
+    width: 30rem;
     background-color: orange;
     margin: 10px;
 }
