@@ -3,13 +3,28 @@ body{
     height: 100vh;
     margin:0;
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* text */
+
 h1{
     margin: 0;
     justify-self: center;
+}
+
+h2{
+    margin: 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+}
+
+p{
+    margin: 0;
 }
 
 /* wrapper */
@@ -29,42 +44,61 @@ header{
     width: 100%;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2rem;
+    color: white;
+    align-items: center;
 }
 
 .home_button{
-    text-decoration: none;
-    color: white;
-    grid-column: span 3;
-    justify-self: center;
-    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    align-self: center;
+    background-color: red;
 }
+
+.title{
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
 
 /* main */
 .main{
     padding: 20px;
     height: 65vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+        'p img'
+        '. img'
+        '. img';
+    grid-template-columns: 400px auto;
+    color: white;
 }
 
 .btn{
     background-color: orange;
     width: 100%;
     min-height: 1.8rem;
+    border-radius: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#main_img{
-    background-image: url(../../site/img/about_carp_313336.png);
+a.btn{
+    padding: 0.4rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.main_img{
     grid-row: all;
-    width: 300px;
-    height: 300px;
+    height: 90%;
+    grid-area: img;
+    justify-self: center;
 }
 
 /* gallery */
@@ -79,11 +113,14 @@ header{
 
 img{
     border-width: 5px;
-    height: 300px;
     background: transparent no-repeat center;
     border-color: white;
     margin: 10px;
     background-size: contain;
+}
+
+.img{
+    height: 300px;
 }
 
 /*about_us*/
@@ -98,7 +135,7 @@ img{
 .profile{
     display: grid;
     grid-template-columns: 200px auto;
-    grid-template-rows: 50px auto;
+    grid-template-rows: auto auto;
     min-height: 200px;
     grid-gap: 20px;
     padding: 20px;
@@ -106,18 +143,21 @@ img{
     width: 30rem;
     background-color: orange;
     margin: 10px;
+    border-radius: 0.9rem;
 }
 
 #profile_img_gabriella{
     grid-row: span 2;
-    background-image: url(../../site/img/about_carp_313336.png); 
+    background-image: url(../img/koi/japanese-koi-500x500.jpg); 
+    border-width: 5px;
+    border-color: white;
     width: 200px;
     height: 200px;
 }
 
 #profile_img_martin{
     grid-row: span 2;
-    background-image: url(../../site/img/about_carp_313336.png);
+    background-image: url(../../site/img/koi/koikarp-617x411.jpg);
     width: 200px;
     height: 200px;
 }
@@ -129,5 +169,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
