@@ -231,6 +231,25 @@ img:hover{
     border-radius: 5%;
 }
 
+/*facts*/
+
+.facts{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.wikibtn{
+    height: 300px;
+    width: 500px;
+    margin: 100px;
+    font-size: 100px;    
+}
+
+.wikibtn h2{
+    font-size: 100px;    
+}
+
 /* footer */
 footer{
     /* background-color: orange; */
