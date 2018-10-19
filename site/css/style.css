@@ -78,6 +78,7 @@ header{
     grid-area: title;
     text-transform: uppercase;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 .btn-box{
